@@ -15,9 +15,7 @@ endif
 
 set autoindent                      " Copy indent to the new line.
 
-set backspace=indent                " ┐
-set backspace+=eol                  " │ Allow `backspace`
-set backspace+=start                " ┘ in insert mode.
+set backspace=eol,indent,start      " Allow `backspace` in insert mode.
 
 set backupdir=~/.vim/backups        " Set directory for backup files.
 
