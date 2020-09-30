@@ -25,4 +25,4 @@ install_plugin "EditorConfig.EditorConfig" "EditorConfig"
 install_plugin "vscodevim.vim" "Vim"
 
 # Close VSCode
-kill -9 "$(pgrep Electron)"
+osascript -e 'quit app "Visual Studio Code"'
