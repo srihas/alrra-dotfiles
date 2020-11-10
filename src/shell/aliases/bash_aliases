@@ -23,6 +23,33 @@ alias rm="rm -rf --"
 alias t="tmux"
 alias y="yarn"
 
+# Recently added
+alias mkdir='mkdir -p'
+alias diff='colordiff'
+# Stop after sending count ECHO_REQUEST packets #
+alias ping='ping -c 5'
+# Do not wait interval 1 second, go fast #
+alias fastping='ping -c 100 -s.2'
+# Show open ports
+alias ports='netstat -tulanp'
+
+# Add safety nets
+# do not delete / or prompt if deleting more than 3 files at a time #
+alias rm='rm -I --preserve-root'
+
+# confirmation #
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+# Parenting changing perms on / #
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+## this one saved by butt so many times ##
+alias wget='wget -c'
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Load OS specific aliases.
