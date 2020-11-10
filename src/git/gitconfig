@@ -17,6 +17,7 @@
     r   = rebase
     s   = status
     u   = commit --amend --no-edit              # Update
+    url = config --get remote.origin.url        # Show remote url
     w   = instaweb --httpd=webrick              # Start web-based visualizer
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -248,7 +248,10 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./create_local_config_files.sh
+    ask_for_confirmation "Configure local config files?"
+    if answer_is_yes; then
+        ./create_local_config_files.sh
+    fi
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

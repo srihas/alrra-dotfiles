@@ -352,3 +352,25 @@ show_spinner() {
     done
 
 }
+
+function prompt() {
+   while true
+   do
+       read -r -p "$1? [Y/n] " input
+
+   case $input in
+      [yY][eE][sS]|[yY])
+   $2
+   break
+   ;;
+   [nN][oO]|[nN])
+   $3
+   break
+   ;;
+   *)
+       echo "Invalid input..."
+   ;;
+   esac
+   done
+}
+
